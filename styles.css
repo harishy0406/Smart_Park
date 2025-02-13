@@ -1,0 +1,187 @@
+/* Color Palette */
+:root {
+    --dark-maroon: #56021F;
+    --muted-burgundy: #7D1C4A;
+    --ocean-blue: #D17D98;
+    --soft-pink: #F4CCE9;
+}
+
+/* General Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--dark-maroon);
+    background-color: var(--soft-pink);
+}
+
+/* Background Image for Hero Section */
+.hero-section {
+    background-image: url('images/car1.jpg'); /* Add your background image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-section h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: var(--dark-maroon);
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+    color: var(--soft-pink) !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--muted-burgundy) !important;
+}
+
+/* Features Section */
+.features-section {
+    padding: 60px 0;
+    background-color: var(--soft-pink);
+}
+
+.features-section h2 {
+    color: var(--dark-maroon);
+    margin-bottom: 40px;
+}
+
+.feature-card {
+    background-color: white;
+    border: 1px solid var(--dark-maroon);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.feature-card h4 {
+    color: var(--dark-maroon);
+}
+
+.feature-card p {
+    color: var(--muted-burgundy);
+}
+
+/* Call-to-Action Section */
+.cta-section {
+    padding: 60px 0;
+    background-color: var(--ocean-blue);
+    color: white;
+    text-align: center;
+}
+
+.cta-section h3 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.cta-section .btn {
+    background-color: var(--dark-maroon);
+    color: var(--soft-pink);
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    border: none;
+}
+
+.cta-section .btn:hover {
+    background-color: var(--muted-burgundy);
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    padding: 60px 0;
+    background-color: var(--soft-pink);
+}
+
+.testimonial-card {
+    background-color: white;
+    border: 1px solid var(--dark-maroon);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.testimonial-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.testimonial-card h4 {
+    color: var(--dark-maroon);
+}
+
+.testimonial-card p {
+    color: var(--muted-burgundy);
+}
+
+/* FAQs Section */
+.faqs-section {
+    padding: 60px 0;
+    background-color: var(--ocean-blue);
+    color: white;
+}
+
+.faqs-section h2 {
+    margin-bottom: 10px;
+}
+
+.accordion {
+    border: none;
+}
+
+.accordion-item {
+    background-color: transparent;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.accordion-button {
+    background-color: var(--dark-maroon);
+    color: var(--soft-pink);
+    border-radius: 10px !important;
+    border: none;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--muted-burgundy);
+    color: var(--soft-pink);
+    box-shadow: none;
+}
+
+.accordion-body {
+    background-color: var(--soft-pink);
+    color: var(--dark-maroon);
+    border-radius: 0 0 10px 10px;
+}
+
+/* Footer */
+.footer {
+    padding: 40px 0;
+    background-color: var(--dark-maroon);
+    color: var(--soft-pink);
+    text-align: center;
+}
+
+.footer a {
+    color: var(--ocean-blue);
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: var(--muted-burgundy);
+}
