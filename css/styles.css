@@ -15,7 +15,7 @@ body {
 
 /* Background Image for Hero Section */
 .hero-section {
-    background-image: url('images/car1.jpg'); /* Add your background image */
+    background-image: url('/images/car4.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -27,10 +27,14 @@ body {
 }
 
 .hero-section h1 {
-    font-size: 4rem;
+    font-size: 8rem;
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    text-align: center;
+    text-align: top;
+}
+.lead {
+    font-size: 2.5rem;
+    font-weight: 300;
 }
 
 /* Navigation Bar */
@@ -40,6 +44,8 @@ body {
 
 .navbar-brand, .navbar-nav .nav-link {
     color: var(--soft-pink) !important;
+    font-size: 1.32rem;
+    font-weight: bold;
 }
 
 .navbar-nav .nav-link:hover {
@@ -54,6 +60,8 @@ body {
 
 .features-section h2 {
     color: var(--dark-maroon);
+    font-size: 3rem;
+    font-weight: bold;
     margin-bottom: 40px;
 }
 
@@ -79,11 +87,14 @@ body {
     padding: 60px 0;
     background-color: var(--ocean-blue);
     color: white;
+    font-weight: bold;
     text-align: center;
+    font-size: 1.32rem;
 }
 
 .cta-section h3 {
-    font-size: 2.5rem;
+    font-size: 3rem;
+    font-weight: bold;
     margin-bottom: 20px;
 }
 
@@ -97,6 +108,14 @@ body {
 
 .cta-section .btn:hover {
     background-color: var(--muted-burgundy);
+}
+
+.cta-image {
+    display: block; 
+    margin: 20px auto; 
+    max-width: 100%; 
+    height: 300px;
+    width: 320px; 
 }
 
 /* Testimonials Section */
@@ -114,6 +133,11 @@ body {
     text-align: center;
 }
 
+.h2, h2 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
 .testimonial-card img {
     width: 100px;
     height: 100px;
@@ -123,6 +147,7 @@ body {
 
 .testimonial-card h4 {
     color: var(--dark-maroon);
+    
 }
 
 .testimonial-card p {
@@ -138,6 +163,8 @@ body {
 
 .faqs-section h2 {
     margin-bottom: 10px;
+    font-size: 3rem;
+    font-weight: bold;
 }
 
 .accordion {
@@ -147,7 +174,7 @@ body {
 .accordion-item {
     background-color: transparent;
     border: none;
-    margin-bottom: 10px;
+    margin-bottom: 5px; /* Reduced gap */
 }
 
 .accordion-button {
@@ -185,3 +212,38 @@ body {
 .footer a:hover {
     color: var(--muted-burgundy);
 }
+
+/* Footer Social Media Icons */
+.social-icons {
+    margin-bottom: 20px;
+}
+
+.social-icons .fa-stack {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-icons .fa-stack .fa-circle {
+    color: var(--ocean-blue);
+}
+
+.social-icons .fa-stack .fab {
+    color: var(--soft-pink);
+}
+
+.social-icons .fa-stack:hover .fa-circle {
+    color: var(--muted-burgundy);
+}
+
+.social-icons .fa-stack:hover .fab {
+    color: var(--soft-pink);
+}
+
+/* Footer Text */
+.footer p {
+    margin: 5px 0;
+    color: var(--soft-pink);
+}
+
+
+
