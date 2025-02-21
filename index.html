@@ -36,7 +36,7 @@
                         <a class="nav-link" href="#faqs">FAQs</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="login.php">Login</a>
+                        <a class="nav-link" href="login.html">Login</a>
                     </li>
                 </ul>
             </div>
@@ -114,7 +114,7 @@
             <h3>Join SmartPark Today!</h3>
             <img src="images/signup.png" alt="Sign Up Icon" class="cta-image">
             <p>Sign up now to enjoy seamless parking space rental and booking.</p>
-            <a href="signup.php" class="btn">Sign Up </a>
+            <a href="signup.html" class="btn">Sign Up </a>
         </div>
     </section>
 
@@ -123,6 +123,20 @@
         <div class="container">
             <h2 class="text-center">Testimonials</h2>
             <div class="row">
+                <div class="col-md-6">
+                    <div class="testimonial-card">
+                        <img src="images/user2.png" alt="Harish Gautham">
+                        <h4>Harish Gautham</h4>
+                        <p>"SmartPark made finding parking so easy!"</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="testimonial-card">
+                        <img src="images/user2.png" alt="Yukti Kumari">
+                        <h4>Yukti Kumari</h4>
+                        <p>"I love how reliable and user-friendly SmartPark is."</p>
+                    </div>
+                </div>
                 <div class="col-md-6">
                     <div class="testimonial-card">
                         <img src="images/user2.png" alt="Harish Gautham">
@@ -146,39 +160,70 @@
         <div class="container">
             <h2 class="text-center">FAQs</h2>
             <div class="accordion" id="faqAccordion">
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
-                            <i class="fas fa-question-circle me-2"></i> How do I book a parking space?
-                        </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show">
-                        <div class="accordion-body">
-                            Simply search for a location, select a parking space, and complete the booking process.
+                <div class="accordion" id="faqAccordion">
+                    <!-- FAQ 1 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                <i class="fas fa-question-circle me-2"></i> How do I book a parking space?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+                                Simply search for a location, select a parking space, and complete the booking process.
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
-                            <i class="fas fa-info-circle me-2"></i> Is SmartPark free to use?
-                        </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse">
-                        <div class="accordion-body">
-                            Yes, signing up and using SmartPark is completely free!
+                    <!-- FAQ 2 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                <i class="fas fa-info-circle me-2"></i> Is SmartPark free to use?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                Yes, signing up and using SmartPark is completely free!
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
-                            <i class="fas fa-question-circle me-2"></i> Can I cancel my booking?
-                        </button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse">
-                        <div class="accordion-body">
-                            Yes, you can cancel your booking at any time before the reservation starts.
+                    <!-- FAQ 3 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                                <i class="fas fa-question-circle me-2"></i> Can I cancel my booking?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                Yes, you can cancel your booking at any time before the reservation starts.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FAQ 4 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                                <i class="fas fa-question-circle me-2"></i> How do I pay for parking?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                You can pay for parking using our secure payment options, including credit/debit cards and digital wallets.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FAQ 5 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive">
+                                <i class="fas fa-info-circle me-2"></i> What if I have issues with my booking?
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                If you encounter any issues with your booking, please contact our 24/7 customer support team for assistance.
+                            </div>
                         </div>
                     </div>
                 </div>

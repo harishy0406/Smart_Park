@@ -247,3 +247,165 @@ body {
 
 
 
+
+/* Signup Section */
+.signup-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: var(--soft-pink);
+}
+
+/* Vector Image */
+.vector-image {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark-maroon);
+}
+
+.vector-image img {
+    max-width: 80%;
+    height: auto;
+}
+
+/* Signup Form */
+.signup-form {
+    padding: 40px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.signup-form h2 {
+    color: var(--dark-maroon);
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.signup-form p {
+    color: var(--muted-burgundy);
+    margin-bottom: 30px;
+}
+
+.signup-form .form-label {
+    color: var(--dark-maroon);
+    font-weight: 600;
+}
+
+.signup-form .form-control {
+    border: 1px solid var(--dark-maroon);
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.signup-form .form-control:focus {
+    border-color: var(--ocean-blue);
+    box-shadow: 0 0 5px rgba(209, 125, 152, 0.5);
+}
+
+.signup-form .btn-primary {
+    background-color: var(--dark-maroon);
+    border: none;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.signup-form .btn-primary:hover {
+    background-color: var(--muted-burgundy);
+}
+
+.signup-form a {
+    color: var(--ocean-blue);
+    text-decoration: none;
+}
+
+.signup-form a:hover {
+    color: var(--muted-burgundy);
+}
+
+
+
+/* Login Section */
+.login-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: var(--soft-pink);
+}
+
+/* Vector Image */
+.vector-image {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark-maroon);
+}
+
+.vector-image img {
+    max-width: 80%;
+    height: auto;
+}
+
+/* Login Form */
+.login-form {
+    padding: 40px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.login-form h2 {
+    color: var(--dark-maroon);
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.login-form p {
+    color: var(--muted-burgundy);
+    margin-bottom: 30px;
+}
+
+.login-form .form-label {
+    color: var(--dark-maroon);
+    font-weight: 600;
+}
+
+.login-form .form-control {
+    border: 1px solid var(--dark-maroon);
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.login-form .form-control:focus {
+    border-color: var(--ocean-blue);
+    box-shadow: 0 0 5px rgba(209, 125, 152, 0.5);
+}
+
+.login-form .btn-primary {
+    background-color: var(--dark-maroon);
+    border: none;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.login-form .btn-primary:hover {
+    background-color: var(--muted-burgundy);
+}
+
+.login-form a {
+    color: var(--ocean-blue);
+    text-decoration: none;
+}
+
+.login-form a:hover {
+    color: var(--muted-burgundy);
+}
