@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>User Dashboard - SmartPark</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/user.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                SmartPark
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="dashboard.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html" id="logoutBtn">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Dashboard Section -->
+    <section class="dashboard">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Sidebar -->
+                <div class="col-md-3 sidebar">
+                    <div class="profile">
+                        <img src="images/user-avatar.jpg" alt="User Avatar" class="profile-img">
+                        <h3>John Doe</h3>
+                        <p>john.doe@example.com</p>
+                    </div>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#upcoming-bookings">
+                                <i class="fas fa-calendar-alt"></i> Upcoming Bookings
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#booking-history">
+                                <i class="fas fa-history"></i> Booking History
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#payment-management">
+                                <i class="fas fa-wallet"></i> Payment Management
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#vehicle-management">
+                                <i class="fas fa-car"></i> Vehicle Management
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#notifications">
+                                <i class="fas fa-bell"></i> Notifications
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#favorites">
+                                <i class="fas fa-star"></i> Favorites
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#support">
+                                <i class="fas fa-question-circle"></i> Support
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Main Content -->
+                <div class="col-md-9 main-content">
+                    <h1>Welcome Back, John!</h1>
+                    <div class="cards">
+                        <!-- Search and Booking Section -->
+                        <div class="card" id="search-booking">
+                            <h2><i class="fas fa-search"></i> Search & Book Parking</h2>
+                            <!-- Search Bar -->
+                            <div class="search-bar">
+                                <input type="text" id="searchLocation" placeholder="Enter location...">
+                                <button id="searchBtn"><i class="fas fa-search"></i> Search</button>
+                            </div>
+                            <!-- Search Results -->
+                            <div id="searchResults" class="search-results">
+                                <!-- Results will be dynamically populated here -->
+                            </div>
+                            <!-- Booking Form -->
+                            <div id="bookingForm" class="booking-form" style="display: none;">
+                                <h3>Book Parking Space</h3>
+                                <form id="bookingDetails">
+                                    <div class="mb-3">
+                                        <label for="parkingLocation" class="form-label">Location</label>
+                                        <input type="text" class="form-control" id="parkingLocation" readonly>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="vehicleType" class="form-label">Vehicle Type</label>
+                                        <select class="form-control" id="vehicleType" required>
+                                            <option value="car">Car</option>
+                                            <option value="bike">Bike</option>
+                                            <option value="truck">Truck</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="bookingDate" class="form-label">Date</label>
+                                        <input type="date" class="form-control" id="bookingDate" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="bookingTime" class="form-label">Time</label>
+                                        <input type="time" class="form-control" id="bookingTime" required>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Book Now</button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <!-- Upcoming Bookings -->
+                        <div class="card" id="upcoming-bookings">
+                            <h2><i class="fas fa-calendar-alt"></i> Upcoming Bookings</h2>
+                            <ul>
+                                <li>Location A - 10/25/2023</li>
+                                <li>Location B - 10/28/2023</li>
+                            </ul>
+                        </div>
+                        <!-- Booking History -->
+                        <div class="card" id="booking-history">
+                            <h2><i class="fas fa-history"></i> Booking History</h2>
+                            <ul>
+                                <li>Location C - 10/20/2023</li>
+                                <li>Location D - 10/15/2023</li>
+                            </ul>
+                        </div>
+                        <!-- Payment Management -->
+                        <div class="card" id="payment-management">
+                            <h2><i class="fas fa-wallet"></i> Payment Management</h2>
+                            <ul>
+                                <li>Paid $10 on 10/20/2023</li>
+                                <li>Paid $15 on 10/15/2023</li>
+                            </ul>
+                        </div>
+                        <!-- Vehicle Management -->
+                        <div class="card" id="vehicle-management">
+                            <h2><i class="fas fa-car"></i> Vehicle Management</h2>
+                            <ul>
+                                <li>Car: ABC-1234</li>
+                                <li>Bike: XYZ-5678</li>
+                            </ul>
+                        </div>
+                        <!-- Notifications -->
+                        <div class="card" id="notifications">
+                            <h2><i class="fas fa-bell"></i> Notifications</h2>
+                            <ul>
+                                <li>Booking confirmed for Location A.</li>
+                                <li>New promotion: 10% off next booking.</li>
+                            </ul>
+                        </div>
+                        <!-- Favorites -->
+                        <div class="card" id="favorites">
+                            <h2><i class="fas fa-star"></i> Favorites</h2>
+                            <ul>
+                                <li>Location A</li>
+                                <li>Location B</li>
+                            </ul>
+                        </div>
+                        <!-- Support -->
+                        <div class="card" id="support">
+                            <h2><i class="fas fa-question-circle"></i> Support</h2>
+                            <ul>
+                                <li><a href="contact.html">Contact Support</a></li>
+                                <li><a href="faqs.html">FAQs</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/user.js"></script>
+</body>
+
+</html>

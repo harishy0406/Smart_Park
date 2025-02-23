@@ -1,0 +1,169 @@
+/* Dashboard Layout */
+.dashboard {
+    padding-top: 80px; /* Offset for fixed navbar */
+    background-color: var(--soft-pink);
+    min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: var(--dark-maroon);
+    color: var(--soft-pink);
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.sidebar .profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar .profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.sidebar .nav-link {
+    color: var(--soft-pink);
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.sidebar .nav-link.active {
+    background-color: var(--muted-burgundy);
+}
+
+.sidebar .nav-link:hover {
+    background-color: var(--muted-burgundy);
+}
+
+/* Main Content */
+.main-content {
+    padding: 20px;
+    background-color: white;
+}
+
+.main-content h1 {
+    color: var(--dark-maroon);
+    margin-bottom: 20px;
+}
+
+.main-content .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.main-content .card {
+    background-color: var(--soft-pink);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.main-content .card h2 {
+    color: var(--dark-maroon);
+    margin-bottom: 15px;
+}
+
+.main-content .card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.main-content .card ul li {
+    margin: 10px 0;
+    color: var(--muted-burgundy);
+}
+
+.main-content .card ul li a {
+    color: var(--ocean-blue);
+    text-decoration: none;
+}
+
+.main-content .card ul li a:hover {
+    color: var(--muted-burgundy);
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid var(--dark-maroon);
+    border-radius: 5px;
+}
+
+.search-bar button {
+    background-color: var(--dark-maroon);
+    color: var(--soft-pink);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: var(--muted-burgundy);
+}
+
+/* Search Results */
+.search-results {
+    margin-top: 20px;
+}
+
+.search-results .result-item {
+    background-color: white;
+    padding: 10px;
+    border: 1px solid var(--dark-maroon);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.search-results .result-item:hover {
+    background-color: var(--soft-pink);
+}
+
+/* Booking Form */
+.booking-form {
+    margin-top: 20px;
+}
+
+.booking-form h3 {
+    color: var(--dark-maroon);
+    margin-bottom: 20px;
+}
+
+.booking-form .form-control {
+    border: 1px solid var(--dark-maroon);
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.booking-form .form-control:focus {
+    border-color: var(--ocean-blue);
+    box-shadow: 0 0 5px rgba(209, 125, 152, 0.5);
+}
+
+.booking-form .btn-primary {
+    background-color: var(--dark-maroon);
+    border: none;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.booking-form .btn-primary:hover {
+    background-color: var(--muted-burgundy);
+}
