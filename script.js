@@ -401,3 +401,20 @@ function showMessage(message, type) {
 function clearMessage() {
   showMessage("", "");
 }
+
+// Static QR mode: every ticket shows the same QR image from assets/qrcode.png.
+// Booking details still update from Firebase/localStorage, but the QR never changes.
+function renderTicket(data) {
+  const ticketData = normalizeSlot(data);
+  setText("ticketBookingId", ticketData.bookingId || "-");
+  setText("ticketName", ticketData.bookedBy || "-");
+  setText("ticketVehicle", ticketData.vehicleNumber || "-");
+  setText("ticketStart", formatDateTime(ticketData.startTime));
+  setText("ticketEnd", formatDateTime(ticketData.endTime));
+  setText("ticketAmount", ticketData.price ? `Rs. ${ticketData.price}` : "Rs. 0");
+
+  const qrContainer = document.getElementById("qrcode");
+  if (!qrContainer) return;
+
+  qrContainer.innerHTML = '<img id="staticQrCode" src="assets/qrcode.png" alt="Parking booking QR code">';
+}

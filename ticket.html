@@ -32,7 +32,9 @@
           <h1>Parking QR Ticket</h1>
         </div>
 
-        <div id="qrcode" class="qr-box"></div>
+        <div id="qrcode" class="qr-box">
+          <img id="staticQrCode" src="assets/qrcode.png" alt="Parking booking QR code">
+        </div>
 
         <dl class="ticket-details">
           <div><dt>Booking ID</dt><dd id="ticketBookingId">-</dd></div>
@@ -41,7 +43,7 @@
           <div><dt>Slot Number</dt><dd>01</dd></div>
           <div><dt>Start Time</dt><dd id="ticketStart">-</dd></div>
           <div><dt>End Time</dt><dd id="ticketEnd">-</dd></div>
-          <div><dt>Amount Paid</dt><dd id="ticketAmount">₹0</dd></div>
+          <div><dt>Amount Paid</dt><dd id="ticketAmount">Rs. 0</dd></div>
         </dl>
 
         <div class="ticket-actions">
@@ -52,7 +54,6 @@
     </main>
   </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
   <script src="firebase-config.js"></script>

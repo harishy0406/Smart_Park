@@ -654,6 +654,13 @@ p {
   text-align: center;
 }
 
+.qr-box img {
+  display: block;
+  width: 220px;
+  height: 220px;
+  object-fit: contain;
+}
+
 .ticket-details {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
