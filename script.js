@@ -27,6 +27,38 @@ document.addEventListener("DOMContentLoaded", () => {
   setupDashboardPage();
   setupBookingPage();
   setupTicketPage();
+
+  // Theme toggle
+  const themeToggleBtn = document.getElementById('themeToggle');
+  const STORAGE_KEY = 'smartParkTheme';
+
+  function applyTheme(isLight) {
+    if (isLight) {
+      document.documentElement.classList.add('light-mode');
+      document.body.classList.add('light-mode');
+      themeToggleBtn.textContent = '🌙';
+      themeToggleBtn.setAttribute('aria-label', 'Switch to dark mode');
+    } else {
+      document.documentElement.classList.remove('light-mode');
+      document.body.classList.remove('light-mode');
+      themeToggleBtn.textContent = '☀️';
+      themeToggleBtn.setAttribute('aria-label', 'Switch to light mode');
+    }
+    localStorage.setItem(STORAGE_KEY, isLight);
+  }
+
+  // On load, check for saved theme or default to dark (false)
+  const savedTheme = localStorage.getItem(STORAGE_KEY);
+  const isLight = savedTheme === 'true';
+  applyTheme(isLight);
+
+  // Toggle button event listener
+  if (themeToggleBtn) {
+    themeToggleBtn.addEventListener('click', () => {
+      const isLight = !document.documentElement.classList.contains('light-mode');
+      applyTheme(isLight);
+    });
+  }
 });
 
 function seedDatabaseIfEmpty() {
